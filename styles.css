@@ -1,0 +1,84 @@
+/* Main Styles */
+body {
+  font-family: "Grandstander", cursive;
+}
+
+header {
+  height: 300px;
+}
+
+h1 {
+  padding-top: 200px;
+  font-size: 5rem;
+}
+
+h1,
+h2,
+.card p {
+  text-align: center;
+}
+
+h2,
+.card p {
+  font-size: 3rem;
+}
+
+/* Components */
+.card {
+  width: 35%;
+  height: 600px;
+  color: white;
+  background-image: url(img/space.jpg);
+  background-size: cover;
+  background-color: #b0c4de;
+  box-shadow: 10px 10px 8px #888888;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+
+#problem {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  border-radius: 15px;
+}
+
+#problem,
+label {
+  background-color: black;
+  opacity: 0.8;
+}
+
+div.flex-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+form.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  padding-top: 15%;
+}
+
+label {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+#submit-button {
+  font-size: 1.2rem;
+  background-color: #ffd447;
+  margin-left: 0.5rem;
+  border-radius: 7px;
+  padding: 1rem;
+}
+
+#answer {
+  font-size: 1rem;
+  border-radius: 5px;
+  text-align: right;
+}
