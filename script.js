@@ -16,4 +16,31 @@ const buildAndSortArr = (preferredArrLength) => {
   }
 };
 
-console.log(buildAndSortArr(2));
+// decide if add or subtract
+// post problem on index.html
+// return answer
+const addOrSubtract = (arr) => {
+  const firstNum = arr[0];
+  const secondNum = arr[1];
+
+  const minus = firstNum - secondNum;
+  let plus = firstNum + secondNum;
+
+  const result = chance.pickone([plus, minus]);
+
+  if (result === plus) {
+    document.getElementById(
+      "problem"
+    ).innerHTML = `${firstNum} + ${secondNum} = ?`;
+  } else {
+    document.getElementById(
+      "problem"
+    ).innerHTML = `${firstNum} - ${secondNum} = ?`;
+  }
+
+  return result;
+};
+
+const problemNumbers = buildAndSortArr(2);
+const answer = addOrSubtract(problemNumbers);
+console.log(`Answer: ${answer}`);
