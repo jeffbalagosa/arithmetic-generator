@@ -1,23 +1,19 @@
-let problem = document.getElementById("problem");
-let numArr = [];
-const plusOrMinusArr = ["+", "-"];
-
-const numArrBuilder = (arrLength) => {
-  for (let i = 0; i < arrLength; i++) {
+// build array & sort array
+const buildAndSortArr = (preferredArrLength) => {
+  let arr = [];
+  let newArr = [];
+  for (let i = 0; i < preferredArrLength; i++) {
     let num = chance.integer({ min: 0, max: 99 });
-    numArr.push(num);
+    arr.push(num);
   }
-  return numArr;
+
+  if (arr[1] > arr[0]) {
+    newArr.push(arr[1]);
+    newArr.push(arr[0]);
+    return newArr;
+  } else {
+    return arr;
+  }
 };
 
-numArrBuilder(2);
-
-if (numArr[1] > numArr[0]) {
-  const largeNum = numArr[1];
-  const smallNum = numArr[0];
-} else {
-  const largeNum = numArr[0];
-  const smallNum = numArr[1];
-}
-
-problem.innerHTML = `${largeNum} + ${smallNum} = ?`;
+console.log(buildAndSortArr(2));
