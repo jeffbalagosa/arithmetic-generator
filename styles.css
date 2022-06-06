@@ -29,7 +29,8 @@ footer {
 
 /* Components */
 .card {
-  width: 35%;
+  width: 40%;
+  min-width: 487px;
   height: 600px;
   color: white;
   background-image: url(img/space.jpg);
