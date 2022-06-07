@@ -70,16 +70,37 @@ label {
   padding: 0.5rem;
 }
 
-#submit-button {
+#submit-button,
+#get-new-problem-btn {
   font-size: 1.2rem;
-  background-color: #ffd447;
+
   margin-left: 0.5rem;
   border-radius: 7px;
   padding: 1rem;
 }
 
-#answer {
+#submit-button {
+  color: black;
+  background-color: #ffd447;
+}
+
+#get-new-problem-btn {
+  color: white;
+  background-color: #390099;
+}
+
+#answer-field {
   font-size: 1rem;
   border-radius: 5px;
   text-align: right;
+}
+
+#correct {
+  color: greenyellow;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#incorrect {
+  color: firebrick;
+  background-color: rgba(0, 0, 0, 0.75);
 }

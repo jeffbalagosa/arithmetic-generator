@@ -1,3 +1,11 @@
+const correctAlert = document.getElementById("correct");
+const incorrectAlert = document.getElementById("incorrect");
+
+const hideAlerts = () => {
+  correctAlert.style.display = "none";
+  incorrectAlert.style.display = "none";
+};
+
 // build array & sort array
 const buildAndSortArr = (preferredArrLength) => {
   let arr = [];
@@ -42,5 +50,26 @@ const addOrSubtract = (arr) => {
 };
 
 const problemNumbers = buildAndSortArr(2);
-const answer = addOrSubtract(problemNumbers);
-console.log(`Answer: ${answer}`);
+const correctAnswer = addOrSubtract(problemNumbers);
+
+// Verify Answer and let user know if they got it correct.
+
+const answerCheck = (num) => {
+  const userInput = parseInt(document.getElementById("answer-field").value, 10);
+
+  if (num === userInput) {
+    correctAlert.style.display = "block";
+  } else if (num != userInput) {
+    incorrectAlert.style.display = "block";
+  } else {
+    console.log("something went wrong");
+  }
+};
+
+const submitButton = document.getElementById("submit-button");
+hideAlerts();
+
+submitButton.onclick = function () {
+  answerCheck(correctAnswer);
+  console.log(`Correct Answer: ${typeof correctAnswer}`);
+};
