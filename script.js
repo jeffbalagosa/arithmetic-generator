@@ -24,9 +24,6 @@ const buildAndSortArr = (preferredArrLength) => {
   }
 };
 
-// decide if add or subtract
-// post problem on index.html
-// return answer
 const addOrSubtract = (arr) => {
   const firstNum = arr[0];
   const secondNum = arr[1];
@@ -34,8 +31,10 @@ const addOrSubtract = (arr) => {
   const minus = firstNum - secondNum;
   let plus = firstNum + secondNum;
 
+  // decide if add or subtract
   const result = chance.pickone([plus, minus]);
 
+  // post problem on index.html
   if (result === plus) {
     document.getElementById(
       "problem"
@@ -45,7 +44,7 @@ const addOrSubtract = (arr) => {
       "problem"
     ).innerHTML = `${firstNum} - ${secondNum} = ?`;
   }
-
+  // return answer
   return result;
 };
 
@@ -53,7 +52,6 @@ const problemNumbers = buildAndSortArr(2);
 const correctAnswer = addOrSubtract(problemNumbers);
 
 // Verify Answer and let user know if they got it correct.
-
 const answerCheck = (num) => {
   const userInput = parseInt(document.getElementById("answer-field").value, 10);
 
