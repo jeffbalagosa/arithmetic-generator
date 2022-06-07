@@ -65,10 +65,6 @@ form.flex-container {
   justify-content: center;
 }
 
-form {
-  padding-top: 15%;
-}
-
 label {
   font-size: 2rem;
   padding: 0.5rem;
