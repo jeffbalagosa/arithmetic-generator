@@ -73,8 +73,14 @@ const answerCheck = (num) => {
 };
 
 const submitButton = document.getElementById("submit-button");
-
 submitButton.onclick = function () {
   answerCheck(correctAnswer);
-  console.log(`Correct Answer: ${typeof correctAnswer}`);
 };
+
+const answerField = document.getElementById("answer-field");
+answerField.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    submitButton.click();
+  }
+});
