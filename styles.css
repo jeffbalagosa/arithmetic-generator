@@ -84,6 +84,11 @@ label {
   background-color: #ffd447;
 }
 
+#submit-button,
+#get-new-problem-btn {
+  cursor: pointer;
+}
+
 #get-new-problem-btn {
   color: white;
   background-color: #390099;
