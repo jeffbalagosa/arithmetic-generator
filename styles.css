@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  height: 200px;
+  height: 150px;
 }
 
 h1 {
@@ -24,7 +24,8 @@ h2,
 }
 
 footer {
-  padding-top: 0.5rem;
+  padding-top: 0.5;
+  text-align: center;
 }
 
 /* Components */
@@ -55,8 +56,8 @@ label {
 
 main.flex-container {
   display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
@@ -108,6 +109,19 @@ label {
 #incorrect {
   color: firebrick;
   background-color: rgba(0, 0, 0, 0.75);
+}
+
+#streak-count {
+  margin: 0;
+}
+
+@media (max-width: 1920px) {
+  header {
+    height: 120px;
+  }
+  .card {
+    height: 600px;
+  }
 }
 
 @media (max-width: 840px) {
