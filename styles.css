@@ -30,7 +30,7 @@ footer {
 /* Components */
 .card {
   width: 40%;
-  min-width: 487px;
+  min-width: 500px;
   height: 600px;
   color: white;
   background-image: url(img/space.jpg);
@@ -108,4 +108,16 @@ label {
 #incorrect {
   color: firebrick;
   background-color: rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 840px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 676px) {
+  h1 {
+    font-size: 3.5rem;
+  }
 }
