@@ -1,6 +1,7 @@
 const correctAlert = document.getElementById("correct");
 const incorrectAlert = document.getElementById("incorrect");
 const newProblemButton = document.getElementById("get-new-problem-btn");
+const streakCountDisplay = document.getElementById("streak-count");
 
 const hideAlerts = () => {
   correctAlert.style.display = "none";
@@ -65,14 +66,31 @@ const answerCheck = (num) => {
     correctAlert.style.display = "block";
     incorrectAlert.style.display = "none";
     newProblemButton.style.display = "block";
+    streakCountDisplay.innerHTML = `Streak = ${streakCounter(correct)}`;
   } else if (num != userInput) {
     incorrectAlert.style.display = "block";
     correctAlert.style.display = "none";
+    streakCountDisplay.innerHTML = `Streak = ${streakCounter()}`;
   } else {
     console.log("something went wrong");
   }
 };
 
+// Count correct answers streak
+let count = 0;
+const streakCounter = (toggle) => {
+  switch (toggle) {
+    case correct:
+      count += 1;
+      break;
+
+    default:
+      count = 0;
+  }
+  return count;
+};
+
+// Event listeners
 const submitButton = document.getElementById("submit-button");
 submitButton.onclick = function () {
   answerCheck(correctAnswer);
