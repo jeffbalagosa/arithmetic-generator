@@ -6,6 +6,7 @@ const hideAlerts = () => {
   correctAlert.style.display = "none";
   incorrectAlert.style.display = "none";
   newProblemButton.style.display = "none";
+  document.getElementById("answer-field").value = "";
 };
 
 hideAlerts();
@@ -28,7 +29,7 @@ const buildAndSortArr = (preferredArrLength) => {
   }
 };
 
-const problemNumbers = buildAndSortArr(2);
+let problemNumbers = buildAndSortArr(2);
 
 const addOrSubtract = (arr) => {
   const firstNum = arr[0];
@@ -54,7 +55,7 @@ const addOrSubtract = (arr) => {
   return result;
 };
 
-const correctAnswer = addOrSubtract(problemNumbers);
+let correctAnswer = addOrSubtract(problemNumbers);
 
 // Verify Answer and let user know if they got it correct.
 const answerCheck = (num) => {
@@ -84,3 +85,11 @@ answerField.addEventListener("keypress", function (event) {
     submitButton.click();
   }
 });
+
+// If newProblemButton is clicked it will generage a new problem and set display back to none for newProblemButton and correct/incorrect alerts.
+newProblemButton.onclick = function () {
+  problemNumbers = buildAndSortArr(2);
+  correctAnswer = addOrSubtract(problemNumbers);
+  hideAlerts();
+  document.getElementById("answer-field").value = "";
+};
