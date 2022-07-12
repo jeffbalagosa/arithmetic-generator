@@ -20,6 +20,11 @@ I decided on a math app because she seemed to like the subject. Plus, my bias to
 
 ## Tchnologies:
 
+- HTML
+- CSS
+- JavaScript
+  - Chance.js library
+
 ## Collaborators:
 
 ## License:
