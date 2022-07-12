@@ -2,6 +2,12 @@
 
 ## Description:
 
+This is an app that gives you random arithmetic problems and keeps track of how many you got right in a row. If you get one wrong or you refresh the page, your score is reset.
+
+We opted to give our kids activities to keep themselves busy instead of sending them to a summer camp or school. Even though we bought our daughter a bunch of workbooks to keep her mind sharp, I wanted to make something for her that’s a bit more gamified. This app is product of that.
+
+I decided on a math app because she seemed to like the subject. Plus, my bias towards engineering was all for it.
+
 ## Features:
 
 ## How to Use:
