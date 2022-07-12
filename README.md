@@ -2,7 +2,7 @@
 
 ## Description:
 
-This is an app that gives you random arithmetic problems and keeps track of how many you got right in a row. If you get one wrong or you refresh the page, your score is reset.
+This is an app that gives you random arithmetic problems and keeps track of how many you got right in a row. If you get one wrong or you refresh the page, your score, or _streak_, is reset.
 
 We opted to give our kids activities to keep themselves busy instead of sending them to a summer camp or school. Even though we bought our daughter a bunch of workbooks to keep her mind sharp, I wanted to make something for her that’s a bit more gamified. This app is product of that.
 
@@ -11,6 +11,12 @@ I decided on a math app because she seemed to like the subject. Plus, my bias to
 ## Features:
 
 ## How to Use:
+
+1. Solve the problem by putting your answer in the field provided.
+2. Click submit to check if it's correct.
+3. Streak goes up if it's correct.
+4. Streak resets if it isn't. But you still get a chance to solve the problem.
+5. After submitting your answer, you are presented with a button to generate a new problem.
 
 ## Tchnologies:
 
