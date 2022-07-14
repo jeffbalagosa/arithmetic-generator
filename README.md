@@ -10,6 +10,10 @@ I decided on a math app because she seemed to like the subject. Plus, my bias to
 
 ## Features:
 
+- Randomly generated double digit addition and subtraction problems.
+- Streak counter for counting how many correct answers in a row.
+- Instant feedback via button click.
+
 ## How to Use:
 
 1. Solve the problem by putting your answer in the field provided.
@@ -23,9 +27,7 @@ I decided on a math app because she seemed to like the subject. Plus, my bias to
 - HTML
 - CSS
 - JavaScript
-  - Chance.js library
-
-## Collaborators:
+  - Chance.js library (I know how to and have used _Math.random_, but this library is so much fun!)
 
 ## License:
 
