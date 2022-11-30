@@ -104,7 +104,7 @@ answerField.addEventListener("keypress", function (event) {
   }
 });
 
-// If newProblemButton is clicked it will generage a new problem and set display back to none for newProblemButton and correct/incorrect alerts.
+// If newProblemButton is clicked it will generate a new problem and set display back to none for newProblemButton and correct/incorrect alerts.
 newProblemButton.onclick = function () {
   problemNumbers = buildAndSortArr(2);
   correctAnswer = addOrSubtract(problemNumbers);
